@@ -28,4 +28,15 @@ static double readWeight(String text) {
       return numb;
     }
   }
+
+static String readName(String text) {
+    var name = ReadDataConsole.readConsole(text);
+
+    if (name.isEmpty) {
+      print("Invalid name!");
+      return "";
+    } else {
+      return name;
+    }
+  }
 }
